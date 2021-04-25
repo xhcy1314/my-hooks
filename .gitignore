@@ -6,6 +6,7 @@
 /yarn-error.log
 /yarn.lock
 /package-lock.json
+/coverage
 
 # production
 /dist
@@ -23,3 +24,4 @@
 # ide
 /.vscode
 /.idea
+

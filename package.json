@@ -10,8 +10,8 @@
     "deploy": "npm run docs:build && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -28,15 +28,19 @@
     ]
   },
   "dependencies": {
+    "ahooks": "^2.10.1",
     "react": "^16.12.0"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^5.1.2",
+    "@types/jest": "^26.0.22",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.13",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
+    "ts-jest": "^26.5.5",
     "yorkie": "^2.0.0"
   }
 }
