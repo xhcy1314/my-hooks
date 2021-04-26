@@ -3,7 +3,7 @@ import { useEffect, useRef, EffectCallback, DependencyList } from 'react';
 type Deps = DependencyList;
 
 type useDidUpdateEffect = (
-  effect: (prevDeps: Deps | undefined) => ReturnType<EffectCallback>,
+  effect: (prevDeps?: Deps | undefined) => ReturnType<EffectCallback>,
   deps?: Deps,
 ) => void;
 
