@@ -8,10 +8,10 @@ hero:
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 内容丰富
-    desc: 基于 React Hooks 的逻辑封装能力，内置[ahooks](https://ahooks.js.org/zh-CN)基础库，轻松实现逻辑复用。
+    desc: 基于 React Hooks 的逻辑封装能力，轻松实现逻辑复用。
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png
-    title: 完备的教程
-    desc: 包含适合全年龄段的丰富的 React Hooks 教程，想学 React Hooks，来这里就够了。
+    title: 完备的基础库
+    desc: 由于hooks基础库都大同小异，所以内置了阿里[ahooks](https://ahooks.js.org/zh-CN)基础库，稳定性有保障。
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: 轻松高效
     desc: 写更少的代码,做更多的事情。
