@@ -12,9 +12,8 @@ describe('useDidUpdateEffect', () => {
         mountedState = 2;
       }, []),
     );
-    expect(mountedState).toEqual(1);
     hook.rerender();
-    expect(mountedState).toEqual(2);
+    expect(mountedState).toEqual(1);
   });
   it('test on optional', () => {
     let mountedState = 1;
@@ -40,12 +39,13 @@ describe('useDidUpdateEffect', () => {
         [mountedState],
       ),
     );
+    hook.rerender();
     expect(mountedState).toEqual(1);
     expect(prevDeps).toEqual(undefined);
     mountedState = 2;
     hook.rerender();
     expect(mountedState).toEqual(3);
-    expect(prevDeps).toEqual(2);
+    expect(prevDeps).toEqual([1]);
   });
   it('test on unMount', () => {
     let mountedState = 1;
@@ -65,9 +65,9 @@ describe('useDidUpdateEffect', () => {
     mountedState = 2;
     hook.rerender();
     expect(mountedState).toEqual(3);
-    expect(prevDeps).toEqual(2);
+    expect(prevDeps).toEqual([1]);
     hook.unmount();
     expect(mountedState).toEqual(4);
-    expect(prevDeps).toEqual(2);
+    expect(prevDeps).toEqual([1]);
   });
 });

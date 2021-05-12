@@ -1,4 +1,6 @@
 export { default as useDidUpdateEffect } from './useDidUpdateEffect';
+export { default as useInfiniteScroll } from './useInfiniteScroll';
+export { default as useCallbackState } from './useCallbackState';
 
 export {
   useControlledValue,
